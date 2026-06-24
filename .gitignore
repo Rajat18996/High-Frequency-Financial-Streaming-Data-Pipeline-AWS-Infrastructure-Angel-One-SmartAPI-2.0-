@@ -1,0 +1,34 @@
+# ==============================================================================
+# Production-Grade Stock Ingestion Pipeline Exclusion Mask
+# ==============================================================================
+
+# Local Python Environment Execution Artifacts
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+include/
+
+# Python Bytecode and Compilation Footprints
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# System-Level Telemetry and Runtime Logs
+logs/
+*.log
+
+# Hot-Path Application Caches & Temporary Storage
+*.csv
+*.csv.tmp
+*.parquet
+*.parquet.tmp
+.DS_Store
+
+# Cloud Platform Local Authentication Overrides
+.aws/
+.credentials/
